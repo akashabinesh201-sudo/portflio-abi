@@ -1,0 +1,458 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Scroll to top button */
+.scroll-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #2575fc;
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(37, 117, 252, 0.5);
+  transition: background 0.3s ease;
+}
+
+.scroll-button:hover {
+  background: #1a54c8;
+}
+
+.scroll-button i {
+  font-size: 20px;
+}
+
+/* Navigation */
+nav {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2575fc;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 7px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.menu li a:hover {
+  background: #2575fc;
+  color: #fff;
+}
+
+/* Media Icons */
+.media-icons a {
+  color: #2575fc;
+  font-size: 18px;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.media-icons a:hover {
+  color: #1a54c8;
+}
+
+/* Responsive menu button (hidden on desktop) */
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #2575fc;
+}
+
+/* Home Section */
+.home {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.home-content .text {
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.text-one {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.text-two {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.text-three {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.text-four {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+/* Home button */
+.home .button button {
+  padding: 12px 35px;
+  background: #ff5f6d;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.home .button button:hover {
+  background: #ff3b47;
+}
+
+/* Section Titles */
+.title {
+  text-align: center;
+  margin: 60px 0 30px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2575fc;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #ff5f6d;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* About Section */
+.about .content {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 20px 60px;
+  align-items: center;
+}
+
+.about-details {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.about-details .left img {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(37,117,252,0.3);
+  transition: transform 0.3s ease;
+}
+
+.about-details .left img:hover {
+  transform: scale(1.05);
+}
+
+.about-details .right {
+  max-width: 550px;
+}
+
+.about-details .topic {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2575fc;
+  margin-bottom: 15px;
+  letter-spacing: 1.5px;
+}
+
+.about-details p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.about .button button {
+  padding: 12px 30px;
+  background: #2575fc;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.about .button button:hover {
+  background: #1a54c8;
+}
+
+/* Skills Section */
+.skills .content {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 20px 60px;
+}
+
+.skills-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.skills-details .text {
+  flex: 1 1 300px;
+}
+
+.skills-details .topic {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #2575fc;
+}
+
+.skills-details p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.experience {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ff5f6d;
+}
+
+.experience .num {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.skills-details .boxes {
+  flex: 1 1 350px;
+}
+
+.box {
+  background: white;
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 15px rgba(37, 117, 252, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.box:hover {
+  box-shadow: 0 12px 25px rgba(37, 117, 252, 0.3);
+}
+
+.box .topic {
+  font-weight: 700;
+  color: #2575fc;
+  margin-bottom: 10px;
+}
+
+.box .per {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ff5f6d;
+}
+
+/* Services Section */
+.services .content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px 60px;
+}
+
+.services .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.services .box {
+  flex: 1 1 280px;
+  background: white;
+  border-radius: 15px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 20px rgba(37, 117, 252, 0.1);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.services .box:hover {
+  box-shadow: 0 15px 30px rgba(37, 117, 252, 0.25);
+}
+
+.services .icon {
+  font-size: 3rem;
+  color: #2575fc;
+  margin-bottom: 15px;
+}
+
+.services .topic {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #2575fc;
+}
+
+.services p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Contact Section */
+.contact .content {
+  max-width: 700px;
+  margin: auto;
+  padding: 0 20px 60px;
+  text-align: center;
+}
+
+.contact .title {
+  margin-bottom: 40px;
+}
+
+.contact .topic {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2575fc;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.contact .button button {
+  padding: 12px 40px;
+  background: #ff5f6d;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact .button button:hover {
+  background: #ff3b47;
+}
+
+/* Footer */
+footer {
+  background: #2575fc;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+footer a {
+  color: #ff5f6d;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .about .content, .skills-details, .services .boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-details .boxes, .services .boxes {
+    flex-wrap: nowrap;
+  }
+
+  .menu {
+    display: none; /* Hide menu for mobile */
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
+/* You can add your script.js for menu toggle */
